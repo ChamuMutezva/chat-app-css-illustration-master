@@ -26,20 +26,29 @@ header {
 }
 figure {
     display: flex;
-    margin-top: 30px;
+    margin-top: 10px;
+    gap: 10px;
 }
 figure img {
-    width: 15%;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
+    border: 2px solid white;
+}
+figcaption {
+    display: flex;
+    flex-direction: column;
 }
 
 .intro {
     position: relative;
-    background-color: lightblue;
+    background: linear-gradient(to right, hsl(264, 100%, 61%),  hsl(293, 100%, 63%));
     margin-top: 10px;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     border-radius: 20px 20px 5px 5px;
+    padding: 20px;
+    gap: 10px;
 }
 .intro::before {
     width: 50%;
@@ -56,4 +65,9 @@ figure img {
     width: 50px;
     border-radius: 15px;
 }
-
+/*i.fas.fa-chevron-left {
+    color: white;
+}*/
+i.fas {
+    color: white;
+}
