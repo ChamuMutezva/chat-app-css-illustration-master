@@ -23,7 +23,7 @@ header {
     background: hsl(0, 0%, 100%);
     margin: 20px auto;
     border-radius: 60px;   
-    padding: 30px 15px;
+    padding: 25px 15px;
 }
 figure {
     display: flex;
@@ -114,4 +114,21 @@ input[type="text"] {
     border-radius: 20px;
     border: 1px solid transparent;
 }
-
+.rightArrow {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    background: hsl(271, 36%, 24%);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2;
+    color: white;
+    top: 15px;
+    left: 85%;
+}
+.fa-chevron-right {
+    color: white;
+}
+.newMsg {
+    position: relative;
+}
