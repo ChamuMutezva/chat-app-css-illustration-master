@@ -94,13 +94,24 @@ i.fas {
     font-size: 10px;
     border-radius: 15px 15px 5px 15px;
 }
+
 .quorte {
     display: flex;
     justify-content: space-around;
+    color: white;    
 }
-.quorte {
-    display: flex;
-    justify-content: space-around;
-    color: white;
-    background: linear-gradient(to right, hsl(264, 100%, 61%),  hsl(293, 100%, 63%));  
+.msgSection2 {
+    background: linear-gradient(to right ,  hsl(293, 100%, 63%), hsl(264, 100%, 61%));  
 }
+strong {
+    margin-left: 15px;
+}
+input[type="text"] {
+    width: 95%;
+    margin: 10px auto;
+    display: block;
+    padding: 13px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+}
+
