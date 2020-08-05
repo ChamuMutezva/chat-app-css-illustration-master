@@ -83,6 +83,7 @@ i.fas {
 }
 .responseSection {
     width: 60%;
+    align-self: flex-end;
     margin-right: 5px;
     margin-top: 10px;
 }
