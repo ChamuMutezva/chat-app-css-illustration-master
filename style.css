@@ -14,9 +14,21 @@ body {
     flex-direction: column;   
 }
 header {
+    position: relative;
     padding: 20px;
-   /* background-color: hsl(264, 100%, 61%);*/
-   background: linear-gradient(to right, hsl(264, 100%, 61%) 50%, transparent 50%);
+   /* background-color: hsl(264, 100%, 61%);
+   background: linear-gradient(to right, hsl(264, 100%, 61%) 50%, transparent 50%);*/
+}
+header::before {
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    background-color: hsl(264, 100%, 61%);
+    content: "";
+    z-index: -1;
+    left: 0;
+    top: 0;
+    border-radius: 0 0 192px 0px;
 }
 .cellphone {
     width: 300px;   
