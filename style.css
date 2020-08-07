@@ -155,3 +155,24 @@ main p {
     line-height: 1.8;
     font-size: 0.8rem;
 }
+
+@media screen and (min-width: 680px){
+    .wrapper {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        align-items: center;
+    }
+    header, main {
+        width: 50%;
+    }
+   
+    .cellphone {       
+        margin: 92px 0 10px auto;       
+    }
+    header::before {
+         width: 60%;
+        height: 70%;       
+        border-radius: 0 0 192px 64px;
+    }
+}
