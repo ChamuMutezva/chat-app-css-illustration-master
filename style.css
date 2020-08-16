@@ -7,6 +7,9 @@ body {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     background-color: hsl(270, 20%, 96%);
+    margin: 0 auto;    
+   /* max-width: 1450px;*/
+   overflow-x: hidden;
 }
 h1 {
     text-align: center;
@@ -23,16 +26,16 @@ header {
    /* background-color: hsl(264, 100%, 61%);
    background: linear-gradient(to right, hsl(264, 100%, 61%) 50%, transparent 50%);*/
 }
-header::before {
+body::before {
     position: absolute;
     width: 50%;
-    height: 70%;
+    height: 100%;
     background-color: hsl(264, 100%, 61%);
     content: "";
     z-index: -1;
     left: 0;
     top: 0;
-    border-radius: 0 0 192px 0px;
+    border-radius: 0 0 100% 0;
 }
 .cellphone {
     width: 290px;
@@ -153,6 +156,7 @@ input[type="text"] {
 .contentWrapper {
     width: 62%;
     margin: auto;
+    margin-bottom: 50px;
 }
 main p {
   font-size: 10px;
@@ -161,7 +165,7 @@ main p {
     line-height: 1.8;
 }
 
-@media screen and (min-width: 680px){
+@media screen and (min-width: 780px){
     .wrapper {
         display: flex;
         width: 100%;
@@ -178,10 +182,22 @@ main p {
     .cellphone {       
         margin: 92px 0 10px auto;       
     }
-    header::before {
-        width: 65%;
-        height: 100%;
-        border-radius: 0 0 280px 150px;
+    body::before {
+        width: 27%;
+        height: 95%;
+        border-radius: 0 0 327px 150px;
+    }
+
+    body::after {
+        content: "";
+    position: absolute;
+    right: -141px;
+    top: 150px;
+    width: 33%;
+    z-index: -1;
+    height: 74%;
+    border-radius: 50% 40% 0 0;
+    background-color: hsl(270deg 28% 93%);
     }
     main p, h1 {
         text-align: left;
@@ -191,11 +207,11 @@ main p {
         text-align: left;
     }
 }
-
+/*
 @media only screen and (min-width: 1450px) {
     body {
         margin: 0 auto;
-        width: 90%;
-        max-width: 1440px;
+    width: 95%;
+    max-width: 1450px;
     }
-} 
+} */
