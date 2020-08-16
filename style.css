@@ -183,9 +183,9 @@ main p {
         margin: 92px 0 10px auto;       
     }
     body::before {
-        width: 27%;
-        height: 95%;
-        border-radius: 0 0 327px 150px;
+        width: 29%;
+        height: 90%;
+        border-radius: 0 0 53% 26%;
     }
 
     body::after {
@@ -195,7 +195,7 @@ main p {
     top: 150px;
     width: 33%;
     z-index: -1;
-    height: 74%;
+    height: 100%;
     border-radius: 50% 40% 0 0;
     background-color: hsl(270deg 28% 93%);
     }
