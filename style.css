@@ -207,6 +207,49 @@ main p {
         text-align: left;
     }
 }
+
+@media only screen and (min-width: 1280px) {
+    body::before {
+        width: 33%;
+        height: 84%;
+        left: -59px;
+        border-radius: 0 0 50% 40%;
+    }
+    .cellphone {
+        margin: 140px -59px 10px auto;
+        width: 275px;
+        padding: 14px 17px 3px;
+    }
+    main {
+        width: 50%;
+        margin: auto;
+    }
+    .contentWrapper {        
+        padding-left: 58px;
+        width: 67%;
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 164px;
+        word-spacing: 6px;
+    }
+    main p {
+        font-size: 1.1rem;
+        margin: 27px auto 0;        
+    }
+    .msg {
+        width: 82%;        
+    }
+    .responseSection {
+        width: 72%;
+        align-self: flex-end;       
+    }
+    .reponse1 {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
 /*
 @media only screen and (min-width: 1450px) {
     body {
